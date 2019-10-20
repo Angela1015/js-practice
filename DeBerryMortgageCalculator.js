@@ -32,6 +32,7 @@ alert(`Your monthly payment will be ${P} (excluding taxes and insurance)`);
 /*Calculating monthly payment using PITI formula
 Principal,Interest,Taxes,Insurance*/
 let PITI = L*(c*(Math.pow((1+c),n))/((Math.pow((1+c),n))-1))+I/12+T/12;
+PITI=PITI.toFixed(2);
 alert(`Your monthly payment will be ${PITI} including taxes and insurance`)
 
 }
