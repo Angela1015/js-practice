@@ -32,19 +32,20 @@ function calculatePayment(){
 let n= N*(12);
 let c = C/100/(12);
 let l = L-D;
-/*let numerator =c*(Math.pow((1+c),n));
-let denominator = ((Math.pow((1+c),n))-1);*/
+
 let P= l*(c*(Math.pow((1+c),n))/((Math.pow((1+c),n))-1));
+
 /*rounding payment to two decimal places*/
+
 P = P.toFixed(2);
-/*alert(c)
-alert(numerator);
-alert(denominator);/*/
+
+
 
 alert(`Your monthly payment will be ${P} (excluding taxes and insurance)`);
 
 /*Calculating monthly payment using PITI formula
 Principal,Interest,Taxes,Insurance*/
+
 let PITI = l*(c*(Math.pow((1+c),n))/((Math.pow((1+c),n))-1))+I/12+T/12;
 PITI = PITI.toFixed(2);
 alert(`Your monthly payment will be ${PITI} including taxes and insurance`)
