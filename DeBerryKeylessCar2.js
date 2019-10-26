@@ -1,4 +1,4 @@
-let checkDriverAge = function(age){
+let checkDriverAge2 = function(age){
     if
   (Number(age) < 18) {
               alert("Sorry, you are too young to drive this car. Powering off");
@@ -11,5 +11,5 @@ let checkDriverAge = function(age){
   }
   }
   
-  checkDriverAge(75)
+  checkDriverAge2(75)
   
