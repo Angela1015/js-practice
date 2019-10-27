@@ -10,3 +10,7 @@ for(let i=0;i<11;i++){
     let product = i*9
     console.log(`${i}*9 =${product}`)
 }
+
+for(let i=1;i<10;i++){
+    
+}
