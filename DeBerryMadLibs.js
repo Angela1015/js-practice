@@ -12,7 +12,7 @@ function createStory(){
    const name = document.getElementById("person").value
     
     let para = document.createElement("p")
-    para.innerHTML = noun+" "+adjective +" " +name
+    para.innerHTML ="The "+ noun+" fell on "+adjective +" " +name
     document.body.appendChild(para)
 
 }
